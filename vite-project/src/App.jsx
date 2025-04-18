@@ -1,5 +1,4 @@
-import './App.css'
-import 
+import ProfileCard from './components/ProfileCard'
 
 const profileData = [{
   name : "김유하",
@@ -9,7 +8,7 @@ const profileData = [{
 function App() {
   return (
     <>
-      <ProfileCard/>
+      <ProfileCard pData={profileData}/>
     </>
   )
 }

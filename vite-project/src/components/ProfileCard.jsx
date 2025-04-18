@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-const profileCard = () => {
+const profileCard = ({pData}) => {
   return (
     <>
-    
+    <ul>
+      <li>{pData.name}</li>
+    </ul>
     </>
   )
 }
