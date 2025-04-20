@@ -28,7 +28,7 @@ const ProfileCard = ({pData}) => {
     <Ul>
       <Li>{pData.name}</Li>
       <Li>{pData.age}</Li>
-      <Li>{pData.isOnline === "true" ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
+      <Li>{pData.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
     </Ul>
     </>
   )
