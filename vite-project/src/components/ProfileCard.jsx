@@ -25,11 +25,14 @@ const Li = styled.li`
 const ProfileCard = ({pData}) => {
   return (
     <>
+    {pData.map((data,i) =>
     <Ul>
-      <Li>{pData.name}</Li>
-      <Li>{pData.age}</Li>
-      <Li>{pData.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
+    <Li key={data.name}>{data.name}</Li>
+    <Li key={data.name}>{data.age}</Li>
+    <Li key={data.name}>{data.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
     </Ul>
+    )}
+    
     </>
   )
 }
