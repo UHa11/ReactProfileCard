@@ -9,7 +9,7 @@ const Ul = styled.ul`
   flex-direction: column;
   justify-content: center;
 /*  */
-  border-radius: 100%;
+  border-radius: 10%;
   border: 3px solid gray;
 /*  */
   background-color: white;
