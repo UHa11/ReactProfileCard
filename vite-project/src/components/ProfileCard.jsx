@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Div = styled.div`
+display: flex;
+flex-direction: row;
+gap: 10px;
+`
 const Ul = styled.ul`
   width: 200px;
   height: 200px;
@@ -24,7 +29,7 @@ const Li = styled.li`
 
 const ProfileCard = ({pData}) => {
   return (
-    <>
+    <Div>
     {pData.map((data) =>
     <Ul  key={data.no}>
     <Li>{data.name}</Li>
@@ -32,8 +37,8 @@ const ProfileCard = ({pData}) => {
     <Li>{data.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
     </Ul>
     )}
-    
-    </>
+
+    </Div>
   )
 }
 
