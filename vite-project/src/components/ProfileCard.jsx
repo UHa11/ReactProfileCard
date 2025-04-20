@@ -26,10 +26,10 @@ const ProfileCard = ({pData}) => {
   return (
     <>
     {pData.map((data) =>
-    <Ul>
-    <Li key={data.name}>{data.name}</Li>
-    <Li key={data.name}>{data.age}</Li>
-    <Li key={data.name}>{data.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
+    <Ul  key={data.no}>
+    <Li>{data.name}</Li>
+    <Li>{data.age}</Li>
+    <Li>{data.isOnline === true ? "🟢 온라인 상태입니다" : "🔴 오프라인 상태입니다"}</Li>
     </Ul>
     )}
     
