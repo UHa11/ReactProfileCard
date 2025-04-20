@@ -25,7 +25,7 @@ const Li = styled.li`
 const ProfileCard = ({pData}) => {
   return (
     <>
-    {pData.map((data,i) =>
+    {pData.map((data) =>
     <Ul>
     <Li key={data.name}>{data.name}</Li>
     <Li key={data.name}>{data.age}</Li>
